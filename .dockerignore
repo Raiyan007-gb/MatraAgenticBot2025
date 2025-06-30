@@ -1,0 +1,12 @@
+# Exclude unnecessary files/folders
+__pycache__
+*.pyc
+*.pyo
+*.git
+tests/
+*.md
+*.log
+*venv
+venv/
+.venv/
+*.venv

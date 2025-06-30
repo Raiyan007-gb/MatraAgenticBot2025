@@ -1,0 +1,10 @@
+# Ignore environment variables
+
+
+# Ignore MatraPolicyBot folder
+MatraPolicyBot/
+__pycache__/
+ChromaDb/
+.env
+venv/
+.venv/
