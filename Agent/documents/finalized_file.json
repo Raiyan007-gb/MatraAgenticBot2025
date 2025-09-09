@@ -1,0 +1,331 @@
+{
+    "GOVERN": [
+      {
+        "title": "Legal, Ethical, Governance Policies & Accountability",
+        "citation": "GOVERN 1.1, 1.2, 2.1, 2.2, 2.3",
+        "queries": {
+          "q": "How is accountability for AI legal compliance and ethical risk distributed across your organization—from senior leadership to developers—and what specific training and reporting mechanisms support trustworthy AI?"
+        },
+        "validator": "The response should demonstrate a clear distribution of AI risk accountability across organizational levels, with leadership overseeing governance policies and developers handling operational accountability. It should detail documented roles (e.g., via RACI charts), mandatory training on AI ethics, bias mitigation, and regulatory standards, and confidential reporting mechanisms (e.g., whistleblower channels) to raise ethical concerns without retaliation, aligning with NIST AI RMF principles of trustworthiness and transparency.",
+        "valid_answers": {
+          "va1": "Accountability is distributed through a governance structure where senior leadership (e.g., Chief Risk Officer) establishes AI risk policies, and developers adhere to RACI-defined responsibilities. Mandatory annual training includes AI ethics, bias mitigation, and regulatory standards (e.g., GDPR, CCPA). A confidential whistleblower platform with non-retaliation protections ensures safe reporting, aligning with NIST AI RMF transparency principles.",
+          "va2": "A layered governance model assigns executive leadership to define risk tolerance and developers to ensure operational compliance, with roles documented in RACI charts within our AI Risk Management Framework. Mandatory training covers AI ethics, bias mitigation, and regulatory standards. Anonymous reporting to an Ethics Review Board, with non-retaliation policies, supports trustworthy AI per NIST AI RMF."
+        },
+        "invalid_answer": "Each department manages AI ethics independently without centralized oversight.",
+        "reason": "Lacks structured accountability, training, or reporting, violating NIST AI RMF principles."
+      },
+      {
+        "title": "Risk Process Design & Documentation Systems",
+        "citation": "GOVERN 1.3, 1.4",
+        "queries": {
+          "q": "What policies and systems establish a centralized infrastructure for AI system documentation to ensure risk and performance information is accessible to technical and non-technical stakeholders?"
+        },
+        "validator": "The response should describe policies for a centralized documentation system consolidating AI risk and performance data, ensuring accessibility via tailored interfaces (e.g., dashboards for non-technical users). It should promote transparency per NIST AI RMF, avoiding specific documentation tools (e.g., datasheets) covered in MAP.",
+        "valid_answers": {
+          "va1": "A centralized AI documentation platform consolidates risk and performance data, updated regularly per policy. Access controls support auditors, while non-technical stakeholders use simplified dashboards, ensuring transparency.",
+          "va2": "A searchable AI documentation repository, governed by metadata update policies, provides technical logs and visual risk summaries for non-technical users, aligning with NIST AI RMF transparency goals."
+        },
+        "invalid_answer": "AI documentation is stored informally within teams.",
+        "reason": "Lacks centralized systems or accessibility, contradicting NIST AI RMF principles."
+      },
+      {
+        "title": "Incident Response & Model Inventory",
+        "citation": "GOVERN 1.5, 1.6",
+        "queries": {
+          "q": "How are formal incident response plans and model inventories established to address AI system failures, with prioritization based on risk classifications?"
+        },
+        "validator": "The response should detail incident response plans with designated roles, escalation paths, and recovery procedures. A model inventory should track system status and incident history, prioritizing high-risk models per NIST AI RMF. Monitoring processes are covered in MAP.",
+        "valid_answers": {
+          "va1": "An AI Incident Response Plan, led by a Risk Response Team, outlines triage, recovery procedures, and escalation paths to senior leadership. A Model Inventory System logs metadata and incident history, prioritizing high-risk models for rapid response based on NIST AI RMF risk frameworks.",
+          "va2": "An AI Incident Management Process, led by designated incident coordinators, includes escalation protocols to compliance officers and recovery procedures. A centralized model registry tracks system status and incident history, prioritizing high-risk systems based on impact, per NIST AI RMF."
+        },
+        "invalid_answer": "AI issues are addressed reactively without formal plans.",
+        "reason": "Lacks formal structures or prioritization, violating NIST AI RMF."
+      },
+      {
+        "title": "Lifecycle Management & Decommissioning",
+        "citation": "GOVERN 1.7, 1.4",
+        "queries": {
+          "q": "What processes guide the end-of-lifecycle decommissioning of AI models, including archiving, stakeholder communication, and capturing lessons learned?"
+        },
+        "validator": "The response should describe structured decommissioning processes, including archiving policies, stakeholder communication, and lessons learned for continuous improvement, per NIST AI RMF. Lifecycle impact assessments and shutdown triggers are covered in MANAGE.",
+        "valid_answers": {
+          "va1": "End-of-lifecycle policies require archiving retired models with metadata. Stakeholders are notified, and post-retirement reviews inform future practices.",
+          "va2": "A decommissioning protocol archives models, informs stakeholders, and conducts retrospectives to enhance governance per NIST AI RMF."
+        },
+        "invalid_answer": "Models are stopped without procedures.",
+        "reason": "Lacks structured processes, violating NIST AI RMF."
+      },      {
+        "title": "Team Composition and Human Responsibilities",
+        "citation": "GOVERN 3.1, 3.2",
+        "queries": {
+          "q": "How are roles for designing, using, and overseeing AI systems defined to ensure diverse and accountable teams?"
+        },
+        "validator": "The response should describe documented roles across the AI lifecycle, emphasizing diversity in demographics and expertise. Policies for role clarity and risk-informed oversight should align with NIST AI RMF governance.",
+        "valid_answers": {
+          "va1": "Governance policies define roles across the AI lifecycle (design, use, oversight) for diverse teams, with diversity in demographics and expertise prioritized in hiring. Mandatory risk training ensures accountability for developers, testers, and overseers, aligning with NIST AI RMF.",
+          "va2": "Roles for developers, users, and oversight teams are documented across the AI lifecycle, emphasizing demographic and expertise diversity. Policies ensure role clarity, and risk-informed training supports accountable human-AI interactions, per NIST AI RMF."
+        },
+        "invalid_answer": "Roles are assigned informally.",
+        "reason": "Lacks structured role assignment or diversity, violating NIST AI RMF."
+      },
+      {
+        "title": "Building Safety Culture",
+        "citation": "GOVERN 4.1",
+        "queries": {
+          "q": "How does your organization foster critical thinking and safety-first practices in AI system design and use?"
+        },
+        "validator": "The response should describe mechanisms (e.g., red-teaming, audits, whistleblower protections) to foster a safety culture throughout the AI lifecycle, per NIST AI RMF.",
+        "valid_answers": {
+          "va1": "Safety is fostered via red-teaming, independent audits, and whistleblower protections. Training promotes critical thinking, ensuring safety-first practices throughout the AI lifecycle, per NIST AI RMF.",
+          "va2": "Policies promote risk prevention through red-teaming, independent audits, and training that fosters critical thinking. Whistleblower protections ensure safe reporting, aligning with NIST AI RMF safety culture principles."
+        },
+        "invalid_answer": "Developers prioritize safety without processes.",
+        "reason": "Lacks independent oversight, violating NIST AI RMF."
+      },
+      {
+        "title": "Incident Logging and External Reporting",
+        "citation": "GOVERN 4.2, 4.3",
+        "queries": {
+          "q": "How are AI system incidents logged centrally and reported externally to promote transparency and industry-wide learning?"
+        },
+        "validator": "The response should specify policies for logging incidents in a centralized system and reporting to external bodies (e.g., AI Incident Databases), ensuring transparency while protecting sensitive data, per NIST AI RMF. Impact assessments are covered in MAP.",
+        "valid_answers": {
+          "va1": "Incidents are logged centrally and shared with AI Incident Databases, anonymizing sensitive data to promote industry learning, per NIST AI RMF.",
+          "va2": "Incident reporting policies mandate centralized logging in a secure system. External sharing via safety repositories, with sensitive data anonymized, supports transparency and industry learning, per NIST AI RMF."
+        },
+        "invalid_answer": "Incidents are logged only for major issues.",
+        "reason": "Fails to ensure continuous logging or sharing, violating NIST AI RMF."
+      },
+      {
+        "title": "Internal Feedback Mechanisms",
+        "citation": "GOVERN 5.1",
+        "queries": {
+          "q": "How is internal feedback from employees gathered and used to improve AI system governance?"
+        },
+        "validator": "The response should describe internal feedback mechanisms (e.g., surveys, ticketing systems) to gather insights from employees, showing how feedback informs governance improvements, per NIST AI RMF. External engagement is covered in MAP.",
+        "valid_answers": {
+          "va1": "Employee surveys and internal ticketing systems gather feedback, evaluated by the governance team to refine AI policies, per NIST AI RMF.",
+          "va2": "Anonymous employee feedback is collected via surveys and a dedicated ticketing system. Insights are evaluated during quarterly governance reviews to improve AI system governance, per NIST AI RMF."
+        },
+        "invalid_answer": "Feedback is collected informally.",
+        "reason": "Lacks structured mechanisms, violating NIST AI RMF."
+      },
+      {
+        "title": "Industry Collaboration for Safety",
+        "citation": "GOVERN 5.2",
+        "queries": {
+          "q": "How does your organization collaborate with external organizations to share AI safety practices and improve industry-wide risk management?"
+        },
+        "validator": "The response should indicate collaboration through structured mechanisms (e.g., partnerships) for sharing safety practices, contributing to AI safety while protecting sensitive information, per NIST AI RMF. Incident sharing is covered in GOVERN 4.2, 4.3.",
+        "valid_answers": {
+          "va1": "Collaboration with bodies like Partnership on AI shares anonymized best practices, improving industry safety, per NIST AI RMF.",
+          "va2": "Participation in AI safety forums shares governance frameworks, with sensitive information anonymized, enhancing industry-wide risk management, per NIST AI RMF."
+        },
+        "invalid_answer": "Safety practices are kept internal.",
+        "reason": "Contradicts NIST AI RMF’s collaborative learning principle."
+      },
+      {
+        "title": "Standards and Third-Party Tool Governance",
+        "citation": "GOVERN 6.1, 6.2",
+        "queries": {
+          "q": "What standards guide AI risk management, and how are third-party tools evaluated and governed for alignment with organizational policies?"
+        },
+        "validator": "The response should reference standards (e.g., NIST AI RMF, ISO/IEC 42001) and describe vetting processes for third-party tools (e.g., APIs) for compliance and ethical alignment, with ongoing governance, per NIST AI RMF. Continuous improvement is covered in MAP.",
+        "valid_answers": {
+          "va1": "NIST AI RMF and ISO/IEC 42001 guide risk management. Third-party tools are vetted for compliance and bias, with annual reviews ensuring alignment, per NIST AI RMF.",
+          "va2": "ISO/IEC 23894 and NIST AI RMF guide risk management. Third-party APIs are evaluated for security, compliance, and ethical alignment (e.g., bias mitigation), with semi-annual audits ensuring ongoing governance, per NIST AI RMF."
+        },
+        "invalid_answer": "Teams choose third-party tools without review.",
+        "reason": "Lacks structured vetting, violating NIST AI RMF."
+      },
+      {
+        "title": "Governance Gate Operations and Risk-Based Lifecycle Approvals",
+        "citation": "RAI Template IV.I",
+        "queries": {
+          "q": "How are governance gates used to manage AI system progression through lifecycle stages, tied to risk assessments and approvals?"
+        },
+        "validator": "The response should detail governance gates for reviewing, approving, or halting AI systems based on risk assessments and policy alignment. Decision-making processes and conditions for progression should align with NIST AI RMF and RAI Template IV.I.",
+        "valid_answers": {
+          "va1": "Governance gates, managed by an Operational Committee, require risk and fairness audits. Issues exceeding thresholds trigger escalation, logged in the AI registry, per NIST AI RMF and RAI Template IV.I.",
+          "va2": "Lifecycle gates include pre-deployment reviews by Compliance teams, with risk and fairness audits. Systems failing safety benchmarks are remediated or halted, with issues escalated to leadership and logged in the AI registry, per NIST AI RMF and RAI Template IV.I."
+        },
+        "invalid_answer": "Projects progress without formal stages.",
+        "reason": "Lacks risk-based decision points, undermining NIST AI RMF."
+      }
+    ],
+    "MAP" : [
+        {
+            "title": "Establishing Context and Identifying Risks for AI System Deployment",
+            "citation": "MAP 1.1, 1.2, 1.3, 1.4, 1.5, 1.6",
+            "queries": {
+              "q": "How is the deployment context and risks of an AI system defined, including its purpose, stakeholders, and risk categorization processes, using specific documentation tools?"
+            },
+            "validator": "The response must articulate the AI system’s purpose, identify stakeholders, and detail processes for identifying technical, societal, and legal risks. It should explain risk categorization (e.g., qualitative scales) and specify documentation tools (e.g., datasheets), avoiding overlaps with GOVERN’s documentation systems, per NIST AI RMF.",
+            "valid_answers": {
+              "va1": "Our AI hiring tool automates resume screening for HR. Stakeholders include HR and applicants. Technical, societal, and legal risks (e.g., bias, discrimination) are identified via reviews, categorized on a red-amber-green scale, and documented in datasheets and risk matrices, per NIST AI RMF.",
+              "va2": "Our medical diagnostic AI assists radiologists. Stakeholders include patients, radiologists, and regulators. Technical (e.g., false negatives), societal (e.g., access disparities), and legal (e.g., HIPAA compliance) risks are identified via reviews, scored (impact × likelihood), and documented in Algorithmic Impact Assessments and risk registers, per NIST AI RMF."
+            },
+            "invalid_answer": "We build AI, check risks, and document them.",
+            "reason": "Lacks specificity on purpose, stakeholders, or tools, failing NIST AI RMF."
+          },
+          {
+            "title": "Assessing Impacts, Trustworthiness, and Continuous Monitoring",
+            "citation": "MAP 2.1, 2.2, 2.3, 3.1, 3.3, 3.4, 3.5, 4.1, 4.2, 5.1, 5.2",
+            "queries": {
+              "q": "How are societal, environmental, and trustworthiness impacts of an AI system assessed, and how are external communities engaged for continuous monitoring, using specific metrics and methods?"
+            },
+            "validator": "The response must describe processes for assessing societal and environmental impacts, engaging external communities (e.g., marginalized groups), and evaluating trustworthiness (e.g., fairness). It should detail monitoring for emergent risks, specific metrics (e.g., fairness indicators), and engagement methods (e.g., workshops), avoiding overlaps with GOVERN’s internal feedback, per NIST AI RMF.",
+            "valid_answers": {
+              "va1": "Our predictive policing AI is assessed via Algorithmic Impact Assessments for societal risks (e.g., over-policing). Civil rights groups are engaged through workshops. Fairness is measured via demographic parity, privacy via k-anonymity, and monthly audits monitor emergent bias (5% disparity threshold). Environmental impact is tracked using the ML CO2 Impact Calculator, per NIST AI RMF.",
+              "va2": "Our e-commerce AI assesses societal risks (e.g., stereotype reinforcement) and environmental impact (e.g., energy use) via impact assessments. Focus groups with low-income users inform fairness. Statistical parity, differential privacy, and LIME ensure trustworthiness. Weekly audits monitor emergent risks (3% disparity threshold), and OECD metrics track 15% energy efficiency improvements, per NIST AI RMF."
+            },
+            "invalid_answer": "We check impacts and update as needed.",
+            "reason": "Lacks specific processes or metrics, failing NIST AI RMF."
+          }
+    ],
+    "MANAGE": [
+      {
+        "title": "Deciding, Prioritizing & Planning AI Risk Responses",
+        "citation": "MANAGE 1.1, 1.2, 1.3",
+        "queries": {
+          "q": "How are decisions made to proceed with an AI system, and how are high-priority risks identified, prioritized, and mitigated through structured planning?"
+        },
+        "validator": "The response should describe decision-making based on business and governance criteria, including trustworthiness. It should show risk assessment by impact and likelihood, prioritization of high-priority risks, and documented mitigation plans with legal oversight, per NIST AI RMF.",
+        "valid_answers": {
+          "va1": "AI adoption is evaluated based on business goals, governance criteria, and trustworthiness tradeoffs (e.g., accuracy vs. transparency). Risks are scored by impact and likelihood, with high-priority risks mitigated via documented plans, reviewed quarterly, per NIST AI RMF.",
+          "va2": "AI alignment with strategic goals and trustworthiness is assessed. A risk matrix prioritizes high-priority risks by impact and likelihood for expert mitigation planning, reviewed under legal and compliance oversight in a risk log, per NIST AI RMF."
+        },
+        "invalid_answer": "Teams use AI and address risks during production.",
+        "reason": "Lacks structured risk processes or legal oversight, per NIST AI RMF."
+      },
+      {
+        "title": "Residual Risks, Tradeoffs & Alternatives",
+        "citation": "MANAGE 1.4, 2.1, 4.2",
+        "queries": {
+          "q": "How are residual risks and tradeoffs in AI system design documented and disclosed, and how are alternatives evaluated for continuous improvement?"
+        },
+        "validator": "The response should show how residual risks are identified, documented, and disclosed. It should describe processes for evaluating non-AI or lower-risk alternatives and how feedback and performance reviews drive improvements, with transparent tradeoff reasoning, per NIST AI RMF.",
+        "valid_answers": {
+          "va1": "Residual risks are identified, documented, and shared with stakeholders. Non-AI alternatives are assessed before design decisions. User feedback and performance metrics guide enhancements, documented in governance logs, per NIST AI RMF.",
+          "va2": "Residual risks are identified, tracked in a registry, and disclosed to stakeholders with transparent tradeoff reasoning (e.g., performance vs. fairness). Simpler or non-AI alternatives are evaluated during upgrades, with improvements driven by audits and feedback, per NIST AI RMF."
+        },
+        "invalid_answer": "We fix issues and ignore remaining risks unless serious.",
+        "reason": "Lacks structured handling of residual risks or alternatives, per NIST AI RMF."
+      },
+      {
+        "title": "Post-Deployment Monitoring & Trustworthiness Management",
+        "citation": "MANAGE 2.2, 3.2, 4.1, 4.3",
+        "queries": {
+          "q": "What systems monitor AI performance and manage trust in third-party components post-deployment, using feedback for improvement?"
+        },
+        "validator": "The response should include monitoring practices (e.g., drift detection), management of third-party models, and user feedback collection for improvements, per NIST AI RMF.",
+        "valid_answers": {
+          "va1": "Automated tools monitor concept drift. Pre-trained models are reviewed quarterly in our AI inventory. User surveys drive resolution and updates, per NIST AI RMF.",
+          "va2": "Monitoring dashboards flag performance errors and drift. Third-party tools undergo vendor assessments for trustworthiness. Bi-annual reviews, incorporating user feedback via surveys, drive system improvements, per NIST AI RMF."
+        },
+        "invalid_answer": "Models are assumed to work unless reported.",
+        "reason": "Lacks systematic monitoring or feedback, per NIST AI RMF."
+      },
+      {
+        "title": "Shutdown, Deactivation & Change Management",
+        "citation": "MANAGE 2.3, 2.4, 3.1",
+        "queries": {
+          "q": "What protocols define thresholds for deactivating AI systems and manage risks from third-party tools or emergent failures?"
+        },
+        "validator": "The response should describe shutdown thresholds (e.g., performance drops), backup and change management protocols, and third-party tool risk standards. Contingency plans for emergent risks should be included, per NIST AI RMF.",
+        "valid_answers": {
+          "va1": "Shutdown thresholds are tied to accuracy and compliance. Third-party tools follow vendor risk protocols. Backup tools are maintained to ensure system recovery. Contingency plans are reviewed semi-annually, per NIST AI RMF.",
+          "va2": "Models exceeding drift or audit thresholds are decommissioned. Backup tools are maintained. Third-party systems allow audits, with escalation routes in our playbook, per NIST AI RMF."
+        },
+        "invalid_answer": "We stop tools if they cause trouble.",
+        "reason": "Lacks structured protocols or contingency measures, per NIST AI RMF."
+      }
+    ],
+    "MEASURE": [
+        {
+          "title": "Measurement Planning, Gaps, and Alignment",
+          "citation": "MEASURE 1.1, 1.2, 1.3",
+          "queries": {
+            "q": "How does your organization plan its AI risk measurement strategy, identify measurement gaps, and ensure alignment with governance and impact needs?"
+          },
+          "validator": "A valid answer should include how measurement objectives are set, how gaps in capabilities or metrics are identified, and how those align with internal risk governance or external stakeholder needs.",
+          "valid_answers": {
+            "va1": "We align measurement goals with enterprise risk policies and define objectives before deployment. Gaps in data or tooling are flagged during project initiation, and we prioritize measurement areas with high stakeholder impact.",
+            "va2": "Our risk team collaborates with governance and product units to define measurement scope and objectives. Gaps in metrics are logged in a tracking system and reviewed biannually to ensure alignment with evolving risk profiles."
+          },
+          "invalid_answer": "We measure whatever we can, and if we miss something, we usually find out later when problems arise.",
+          "reason": "This response shows a lack of strategic planning or proactive gap assessment and doesn’t reflect any alignment with governance or stakeholder concerns."
+        },
+        {
+          "title": "Model Accuracy, Robustness, and Performance Evaluation",
+          "citation": "MEASURE 1.4, 2.2, 2.5",
+          "queries": {
+            "q": "How does your organization evaluate and monitor AI model performance, robustness, and accuracy, including during changes in deployment environments?"
+          },
+          "validator": "A valid answer should show the use of performance metrics, stress-testing across diverse inputs, and plans for continuous monitoring as deployment conditions evolve.",
+          "valid_answers": {
+            "va1": "We run performance benchmarks across various subgroups before and after deployment. Accuracy and robustness are tracked through automated pipelines, and we re-evaluate performance after major system updates.",
+            "va2": "Model accuracy is assessed on multiple datasets, including edge cases. Robustness is validated through adversarial testing, and we maintain a dashboard that flags performance drops in real time."
+          },
+          "invalid_answer": "We check accuracy once before launching and trust that it holds up unless we get complaints.",
+          "reason": "This indicates no ongoing evaluation or monitoring and lacks consideration for robustness or shifting contexts."
+        },
+        {
+          "title": "Explainability, Interpretability, and Transparency",
+          "citation": "MEASURE 2.6, 2.9",
+          "queries": {
+            "q": "How does your organization ensure that AI systems are explainable, interpretable, and transparent to users and stakeholders?"
+          },
+          "validator": "A valid answer should describe the tools, techniques, or design choices made to provide explanations for decisions and how transparency is maintained in documentation and model behavior.",
+          "valid_answers": {
+            "va1": "We use SHAP values and feature importance plots to explain predictions, with tailored summaries for technical and non-technical audiences. All model logic and training data are documented in our AI transparency repository, per NIST AI RMF.",
+            "va2": "Interpretability is built into model selection criteria, prioritizing simpler models where possible. For black-box models, post hoc explanation techniques (e.g., LIME) are applied, validated through user testing. Model behavior and logic are documented in a transparency repository, per NIST AI RMF."
+          },
+          "invalid_answer": "Users don’t really need to know how the system works as long as it gives good results.",
+          "reason": "This disregards the need for explainability and fails to meet transparency standards, increasing risk and undermining trust."
+        },
+        {
+          "title": "Privacy, Fairness, and Bias Mitigation",
+          "citation": "MEASURE 2.7, 2.10, 2.11",
+          "queries": {
+            "q": "How does your organization evaluate and address privacy risks, fairness concerns, and potential biases in AI systems?"
+          },
+          "validator": "A valid answer should describe mechanisms for data privacy protection (e.g., differential privacy), how fairness and bias are measured (e.g., demographic parity), and mitigation strategies applied at various stages.",
+          "valid_answers": {
+            "va1": "We apply fairness metrics (e.g., demographic parity) during training and monitor for bias post-deployment. Sensitive data is anonymized using differential privacy, and bias assessments are reviewed by an ethics board, per NIST AI RMF.",
+            "va2": "Bias is addressed through pre-, in-, and post-processing techniques. Fairness metrics (e.g., equal opportunity) are integrated into our testing suite. Privacy risks are mitigated using differential privacy during data ingestion, with ongoing reviews, per NIST AI RMF."
+          },
+          "invalid_answer": "As long as our data is big enough, we assume fairness and privacy aren’t major issues.",
+          "reason": "It ignores well-known risks from biased or sensitive data and lacks any structured measurement or mitigation plan."
+        },
+        {
+          "title": "Environmental Impact and Metric Effectiveness",
+          "citation": "MEASURE 2.12, 2.13",
+          "queries": {
+            "q": "How does your organization evaluate the environmental impact of AI systems and assess the effectiveness of risk-related metrics?"
+          },
+          "validator": "A valid answer should include how environmental metrics (e.g., carbon footprint) are tracked and how the relevance and quality of risk metrics are reviewed for improvement.",
+          "valid_answers": {
+            "va1": "We use a carbon calculator to estimate emissions during training and prioritize lower-energy models where possible. Metric dashboards are reviewed monthly to ensure we’re measuring relevant risks.",
+            "va2": "Environmental benchmarks are set during model design, and alternatives are considered when carbon or water impact is high. Metric effectiveness is audited every quarter to ensure alignment with system risk."
+          },
+          "invalid_answer": "We don’t track environmental data or revisit metrics once they’re set.",
+          "reason": "This lacks sustainability accountability and ignores the importance of evolving risk metrics to maintain effectiveness."
+        },
+        {
+          "title": "Risk Monitoring, Feedback, and Incident Response",
+          "citation": "MEASURE 3.1, 3.2, 3.3, 4.1, 4.3",
+          "queries": {
+            "q": "What processes are in place for ongoing risk monitoring, expert consultation, and managing responses to incidents and system changes?"
+          },
+          "validator": "A valid answer should cover continuous monitoring practices, expert consultation, and procedures for incident response or performance degradation.",
+          "valid_answers": {
+            "va1": "Alerts are triggered by performance anomalies. Domain experts are consulted to refine risk tracking, and incident response playbooks ensure rapid escalation, per NIST AI RMF.",
+            "va2": "Stakeholder workshops and expert consultations refine risk tracking. Post-deployment monitoring tracks real-world performance, with incident response playbooks outlining rapid escalation procedures, per NIST AI RMF."
+          },
+          "invalid_answer": "We only look into issues if a big problem is reported by customers or regulators.",
+          "reason": "This approach is reactive and lacks systematic feedback integration or proactive incident management, undermining reliability and accountability."
+        }
+      ]
+  }

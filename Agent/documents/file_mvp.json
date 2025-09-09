@@ -1,0 +1,74 @@
+{
+    "GOVERN": [
+      {
+        "title": "Legal, Ethical, Governance Policies & Accountability",
+        "citation": "GOVERN 1.1, 1.2, 2.1, 2.2, 2.3",
+        "queries": {
+          "q": "How is accountability for AI legal compliance and ethical risk distributed across your organization \u2014 from senior leadership to developers \u2014 and how are roles, responsibilities, training, and reporting mechanisms structured to support trustworthy AI?"
+        },
+        "validator": "The response should demonstrate a clear and transparent distribution of AI risk accountability across organizational levels, including leadership responsibility for governance policies, developers' operational accountability, and documented roles and responsibilities. It should show that the organization has structured training programs on legal, ethical, and fairness topics relevant to AI use and development. Furthermore, it should include reporting mechanisms such as trusted whistleblower channels or escalation pathways to ensure that ethical risks can be raised without fear of retaliation, supporting a culture of trustworthiness and transparency aligned with NIST AI RMF principles.",
+        "valid_answers": {
+          "va1": "Our organization distributes accountability for AI legal compliance and ethical risk through clearly documented governance structures. Senior leadership, including the Chief Risk Officer and AI Ethics Committee, oversee AI risk policies, while developers and operational teams have assigned responsibilities codified in governance documents and RACI charts. All personnel receive recurring training focused on AI ethics, bias mitigation, and regulatory standards. Additionally, a confidential whistleblower platform is in place to report concerns related to AI system behavior or compliance breaches.",
+          "va2": "We have a layered accountability model in which executive leadership is responsible for setting AI governance and risk tolerance, while product and development teams are held accountable for system compliance and ethical implementation. Roles and responsibilities are documented in our AI Risk Management Framework, and mandatory annual training on legal, ethical, and fairness requirements is provided to all employees involved with AI. We maintain anonymous reporting mechanisms that allow any stakeholder to escalate AI-related ethical or regulatory issues to a dedicated Ethics Review Board."
+        },
+        "invalid_answer": "We expect each department to manage AI ethics and compliance based on their own judgment without centralized oversight.",
+        "reason": "This response lacks structured leadership accountability, documented roles, formal training programs, and reporting mechanisms. It fails to demonstrate an organized and transparent system of responsibility, violating essential governance principles emphasized in the NIST AI RMF."
+      },
+      {
+        "title": "Risk Process Design & Documentation",
+        "citation": "GOVERN 1.3, 1.4",
+        "queries": {
+          "q": "What standardized policies or tools (like model cards or documentation systems) are in place to define your AI systems' purpose, data, risk thresholds, and performance \u2014 and how are these made accessible to technical and non-technical stakeholders?"
+        },
+        "validator": "The response should explain how the organization uses standardized tools such as model cards, datasheets, or documentation templates to transparently define AI system purpose, data sources, risk thresholds (such as accuracy or fairness requirements), and performance metrics. It should highlight the presence of a centralized documentation system that is easily accessible to both technical and non-technical stakeholders, promoting transparency, trust, and clear understanding of AI risks across the organization as expected by the NIST AI RMF.",
+        "valid_answers": {
+          "va1": "We utilize model cards and datasheets for all deployed AI systems, documenting each model's intended purpose, data origin, risk assumptions, and performance benchmarks. A centralized AI documentation platform ensures that these records are easily accessible to developers, auditors, and business stakeholders alike. Risk thresholds for accuracy and fairness are predefined, and visual summaries are provided for non-technical audiences to foster organization-wide transparency.",
+          "va2": "Our organization employs standardized documentation templates modeled after NIST's best practices, incorporating model cards and system datasheets. These templates detail system purpose, critical data attributes, expected performance, and risk thresholds. All documentation is housed in a searchable repository that provides customized dashboards for technical teams and simplified summaries for business users, ensuring clarity and accountability across the organization."
+        },
+        "invalid_answer": "We store technical documentation informally within developer teams and make it available on request if needed.",
+        "reason": "This answer does not establish the use of standardized tools, lacks a centralized system, and fails to ensure consistent accessibility to technical and non-technical stakeholders. It contradicts the NIST AI RMF's principles of transparency, documentation, and stakeholder communication."
+      },
+      {
+      "title": "Monitoring & Incident Response",
+      "citation": "GOVERN 1.5, 1.6",
+      "queries": {
+        "q": "How does your organization monitor AI systems post-deployment for drift, failures, or harmful outcomes; and what formal response, escalation, and tracking mechanisms exist to address incidents across all in-house and third-party models?"
+      },
+      "validator": "The response should detail how the organization implements real-time or periodic monitoring for model drift, anomalies, or performance degradation post-deployment. It should describe the existence of a formal incident response plan, designation of responsible personnel or roles, and the use of a model inventory that tracks system status. Additionally, it should explain how monitoring is prioritized based on risk classifications to ensure that high-risk models receive greater scrutiny, reflecting continuous risk management as advocated by the NIST AI RMF.",
+      "valid_answers": {
+        "va1": "We have deployed real-time monitoring systems to track AI model drift, data anomalies, and degradation in performance across both internal and third-party models. A formal AI Incident Response Plan governs incident detection, triage, escalation, and recovery, led by our designated AI Risk Response Team. Our Model Inventory System captures metadata, update history, and incident logs, with high-risk models monitored more intensively based on risk stratification frameworks.",
+        "va2": "Our organization conducts continuous monitoring of AI systems using automated alert systems for performance deviations and drift indicators. A dedicated AI Incident Management Process details the steps for escalation, impact analysis, rollback, and notification. We maintain a centralized model registry covering all active and legacy models, and prioritize monitoring intensity according to the assessed risk level of each model to ensure proportional attention to higher-impact systems."
+      },
+      "invalid_answer": "We will monitor AI systems if any issues are reported by users after deployment.",
+      "reason": "This answer reflects a reactive rather than proactive approach, lacking formal monitoring protocols, incident response structures, or prioritized risk-based monitoring, thus violating NIST AI RMF's requirements for continuous post-deployment oversight and responsible risk management."
+    },
+    {
+      "title": "Lifecycle & Decommissioning",
+      "citation": "GOVERN 1.7, 1.4",
+      "queries": {
+        "q": "What formal lifecycle management processes guide the retirement of AI models \u2014 including archiving, stakeholder communication, and learning from failures to improve future risk practices?"
+      },
+      "validator": "The response should describe a structured and proactive AI lifecycle management process, including defined triggers for decommissioning (such as performance degradation or ethical concerns), clear archiving and retention policies for models and associated artifacts, protocols for communicating with stakeholders affected by AI model retirements, and procedures to capture lessons learned from model failures or incidents. These processes should contribute to the organization's commitment to continuous improvement and responsible risk management, consistent with NIST AI RMF principles.",
+      "valid_answers": {
+        "va1": "We have established formal lifecycle policies that trigger AI model decommissioning based on criteria such as poor performance, regulatory changes, or stakeholder concerns. Retired models and related documentation are archived securely for compliance and future auditing. Stakeholders are informed in advance through structured communications, and post-retirement reviews are conducted to extract lessons learned, which are incorporated into our AI governance framework.",
+        "va2": "AI model decommissioning at our organization follows a standardized lifecycle protocol, including clear triggers for retirement, such as unacceptable drift or ethical risks. Decommissioned models are archived within our model registry with appropriate metadata. Stakeholder communication plans ensure affected parties are notified transparently, and retrospectives are held after each decommissioning to document insights and enhance future risk practices."
+      },
+      "invalid_answer": "When an AI model is no longer needed, we simply stop using it without any special procedures.",
+      "reason": "This answer fails to demonstrate a structured decommissioning process, does not ensure archiving, stakeholder communication, or retrospective learning, and violates NIST RMF expectations for lifecycle management and responsible risk mitigation."
+    },
+    {
+      "title": "Team Composition and Human Responsibilities",
+      "citation": "GOVERN 3.1, 3.2",
+      "queries": {
+        "q": "Who will be involved in designing, using, and overseeing the AI system, and how will you clearly define their roles and responsibilities?"
+      },
+      "validator": "The response should clearly describe how roles and responsibilities across the AI system lifecycle are defined, differentiated, and assigned among diverse individuals or teams. It should include mention of diversity in demographics, expertise, and lived experience, and establish policies for ensuring role clarity and risk-informed human oversight aligned with organizational governance practices.",
+      "valid_answers": {
+        "va1": "Our organization ensures that AI system design, use, and oversight involve diverse, interdisciplinary teams with clearly defined roles and responsibilities. We establish policies differentiating human responsibilities for system operation, oversight, and governance. These policies promote diversity, inclusion, and transparency, ensuring all AI actors are proficient and accountable for their assigned tasks throughout the AI lifecycle.",
+        "va2": "To manage the human responsibilities in AI system governance, we define clear organizational policies that outline differentiated roles for AI developers, testers, operators, and oversight teams. Diversity is prioritized by involving individuals with varied demographic and disciplinary backgrounds. Risk management training is provided, and human-AI configurations are documented and tracked for transparency and accountability."
+      },
+      "invalid_answer": "We'll assign people to the AI project as needed and figure out roles along the way.",
+      "reason": "This answer lacks structured role assignment, does not mention diversity or role differentiation, and shows no clear governance or accountability practices, violating the principles outlined in the NIST AI RMF."
+    }
+    ]
+  }

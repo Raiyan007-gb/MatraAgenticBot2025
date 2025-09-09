@@ -1,0 +1,12 @@
+terraform init        # Initializes providers and backends
+terraform fmt          # Format the files
+terraform validate     # Validate configuration
+terraform plan         # See what will be created
+terraform apply        # Apply the changes
+terraform destroy
+terraform refresh
+
+
+
+
+

@@ -1,0 +1,112 @@
+/* src/app/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Define color variables for light/dark modes */
+:root {
+  --background-light: #ffffff;
+  --foreground-light: #171717;
+  --background-dark: #171717;
+  --foreground-dark: #ededed;
+}
+
+/* Default to light mode (or remove if you only want dark) */
+:root {
+    --background: var(--background-light);
+    --foreground: var(--foreground-light);
+}
+
+/* Apply dark mode variables when preferred */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: var(--background-dark);
+    --foreground: var(--foreground-dark);
+  }
+}
+
+/* --- START: Full Height & Body Background --- */
+html,
+body {
+  font-size: 18px;
+  height: 100%;
+  color: var(--foreground);
+  background-color: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+/* --- END: Full Height & Body Background --- */
+
+/* --- Custom Scrollbar Styles for Table --- */
+.table-scroll-container::-webkit-scrollbar {
+  height: 8px; /* Slim scrollbar height */
+  display: block; /* Force visibility */
+}
+
+.table-scroll-container::-webkit-scrollbar-track {
+  background: #262626; /* neutral-800 equivalent */
+  border-radius: 4px;
+}
+
+.table-scroll-container::-webkit-scrollbar-thumb {
+  background: #CAA72F; /* accent-gold */
+  border-radius: 4px;
+}
+
+.table-scroll-container::-webkit-scrollbar-thumb:hover {
+  background: #D4B137; /* Slightly lighter gold on hover */
+}
+
+/* For Firefox */
+.table-scroll-container {
+  scrollbar-width: thin;
+  scrollbar-color: #CAA72F #262626; /* thumb track */
+}
+
+/* Standard Tailwind utilities layer */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+/* --- END: Full Height & Body Background --- */
+
+
+/* --- Remove Fixed Logo Background Styles --- */
+/*
+  If you previously added styles like these to 'body' for the fixed logo background,
+  make sure they are REMOVED or commented out, as they conflict with the fix:
+
+  body {
+    background-image: url('/logo.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    position: relative;
+    z-index: 0;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-color: rgba(10, 10, 10, 0.85);
+    z-index: -1;
+  }
+*/
+/* --- End Remove Fixed Logo Background Styles --- */
+
+
+/* Standard Tailwind utilities layer */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* No special positioning needed for main if body handles background */
+/* main {
+    position: relative;
+    z-index: 1;
+} */
